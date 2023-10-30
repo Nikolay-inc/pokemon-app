@@ -1,0 +1,26 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "overrides": [
+        {
+            "files": ["*.js"],
+            "rules": {
+                "@typescript-eslint/no-var-requires": "off"
+            }
+        }
+    ],
+    "env": {
+        "node": true,
+        "browser": true,
+        "amd": true
+    },
+    "rules": {
+        "no-console": "warn",
+        "max-len": ["warn", {"code": 120}],
+        "semi": ["warn", "always"],
+        "comma-dangle": ["warn", "always-multiline"],
+        "indent": ["warn", 2]
+    }
+}
+
